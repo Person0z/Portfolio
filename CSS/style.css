@@ -52,9 +52,12 @@ body {
     color: #2F80ED;
 }
 
-
 .social-icons a:hover i {
     transform: scale(1.2);
+}
+
+.social-icons i {
+    transition: transform 0.3s ease-in-out;
 }
 
 .projects-container {
@@ -70,6 +73,14 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: left;
+}
+
+.profile-container a {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.profile-container a:hover {
+    transform: scale(1.08);
 }
 
 .project-card img {
