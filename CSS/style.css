@@ -91,6 +91,7 @@ body {
 .project-card p {
     color: #666;
     font-size: 0.9em;
+    height: 65px;
 }
 
 .project-link {
