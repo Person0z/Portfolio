@@ -29,7 +29,7 @@ body {
     border-radius: 50%;
     display: block;
     object-fit: cover;
-    border: 3px solid #2F80ED;
+    border: 3px solid #000000;
 }
 
 .separator {
