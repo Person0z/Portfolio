@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Person0z's Portfolio</title>
+  <!-- Favion + Meta data-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/profile/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="images/profile/favicon.svg" />
+  <link rel="shortcut icon" href="images/profile/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/profile/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Person0z's Portfolio" />
+  <link rel="manifest" href="images/profile/site.webmanifest" />
+  <meta name="twitter:title" content="Person0z's Portfolio">
+  <meta name="twitter:description" content="Explore a collection of my creative work and projects, showcasing my skills in design, development, and more. Get inspired by my portfolio and previous accomplishments.">
+  <meta name="twitter:image" content="images/profile/square-p.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#CBC3E3">
+  <meta property="og:url" content="https://person0z.me/">
+  <meta property="og:type" content="website">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link 
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+  >
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-..." 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+  />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Person0z's Portfolio</div>
+    
+    <!-- Hamburger Icon -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Hi, I’m Person0z</h1>
+    <p>
+       I'm a passionate developer who loves coding in Python, Bash, and HTML. I'm currently learning Kotlin and exploring Android app development.
+    </p>
+    <a href="#projects">
+      <button class="btn-primary">Explore My Work</button>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <!-- Text area -->
+      <div class="about-text">
+        <!-- Mobile circular image with shape-outside -->
+        <div class="mobile-image">
+          <img 
+            src="images/profile/square-p.jpg" 
+            alt="Profile Picture"
+          />
+        </div>
+        <p>
+            I'm an 18-year-old Eagle Scout, and student who has had a passion for tech since I was young. I have turned that passion into something bigger.
+            I have been taught how to code in Python, Shell, and HTML, and I'm currently being taught how to code in Kotlin. I'm also exploring Android app development. 
+            I have also started a few hosting companies and run a Minecraft server called HurricaneMC. I'm always looking for new opportunities to learn and grow, and if you want to work with me, 
+            feel free to contact me!
+        </p>
+      </div>
+
+      <!-- Desktop image -->
+      <div class="about-image desktop-only">
+        <img 
+          src="images/profile/square-p.jpg" 
+          alt="Profile Picture"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img 
+          src="images/projects/magisk-alt-repo.webp" 
+          alt="Magisk Alt Repo Logo"
+        />
+        <div class="project-card-content">
+          <h3>Malwack | Ad & Malware Blocker</h3>
+          <p>A module for rooted android phones which blocks all sorts of Ads, Malware, trackers, and more!</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Magisk-Modules-Alt-Repo/Malwack">View Project</a>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img 
+          src="images/projects/birdflop.jpg" 
+          alt="Birdflop Logo"
+        />
+        <div class="project-card-content">
+          <h3>Birdflop</h3>
+          <p>I work at Birdflop and am part of the Support and Media team. Birdflop is the first Nonprofit Minecraft hosting company built to serve the community.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://birdflop.com/">View Website</a>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img 
+          src="images/projects/python.png" 
+          alt="Python Logo"
+        />
+        <div class="project-card-content">
+          <h3>Discord Python Template</h3>
+          <p>I made this template for Discord bots in Python for people to use or learn from. This is also how I learned Python!</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Person0z/discord.py-template">View Project</a>
+        </div>
+      </div>
+
+      <!-- Extra projects (hidden initially)
+      <div class="project-card">
+        <img 
+          src="N/A" 
+          alt="Project 4 Image"
+        />
+        <div class="project-card-content">
+          <h3>Project Four</h3>
+          <p>N/A</p>
+        </div>
+        <div class="card-action">
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    Expand Button
+    <div style="text-align: center; margin-top: 2rem;">
+      <button id="expandBtn" class="btn-primary">Expand to see more!</button>
+    </div>  -->
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>Skills & Languages</h2>
+    <div class="skills-grid">
+      <!-- skill -->
+      <div class="skill-card">
+        <img src="images/logos/python-logo.png" alt="Python Logo">
+        <h3>Python</h3>
+        <div class="skill-level">Intermediate</div>
+      </div>
+      <!-- skill -->
+      <div class="skill-card">
+        <img src="images/logos/bash-logo.png" alt="Bash Logo">
+        <h3>Bash (Shell)</h3>
+        <div class="skill-level">Intermediate</div>
+      </div>
+      <!-- skill -->
+      <div class="skill-card">
+        <img src="images/logos/kotlin-logo.png" alt="Kotlin Logo">
+        <h3>Kotlin</h3>
+        <div class="skill-level">Beginner</div>
+      </div>
+      <!-- skill -->
+      <div class="skill-card">
+        <img src="images/logos/html-logo.png" alt="HTML Logo">
+        <h3>HTML</h3>
+        <div class="skill-level">Advanced</div>
+      </div>
+      <!-- skill -->
+      <div class="skill-card">
+        <img src="images/logos/linux-logo.png" alt="Linux Logo">
+        <h3>Linux</h3>
+        <div class="skill-level">Intermediate</div>
+      </div> 
+      <div class="skill-card">
+        <img src="images/logos/sql-logo.png" alt="SQL Logo">
+        <h3>SQL</h3>
+        <div class="skill-level">Beginner</div>
+      </div>
+    </div>
+  </section>
+  <!-- End Skills Section -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>
+      Feel free to reach out to me on any of these platforms! I’d love to connect or answer any questions you may have.
+    </p>
+    <div class="contact-icons">
+      <!-- XDA -->
+      <a 
+        class="contact-icon"
+        href="https://xdaforums.com/m/person0z.12295239/" 
+        target="_blank" 
+        rel="noopener"
+      >
+        <i class="fab fa-android"></i>
+        <span>XDA</span>
+      </a>
+      <!-- Telegram -->
+      <a 
+        class="contact-icon"
+        href="https://t.me/Person0z" 
+        target="_blank" 
+        rel="noopener"
+      >
+        <i class="fab fa-telegram-plane"></i>
+        <span>Telegram</span>
+      </a>
+      <!-- Discord -->
+      <a 
+        class="contact-icon"
+        href="https://discord.com/users/640363201510244362" 
+        title="Add me on Discord!"
+      >
+        <i class="fab fa-discord"></i>
+        <span>Discord</span>
+      </a>
+      <!-- Reddit -->
+      <a 
+        class="contact-icon"
+        href="https://reddit.com/u/person0x" 
+        target="_blank" 
+        rel="noopener"
+      >
+        <i class="fab fa-reddit"></i>
+        <span>Reddit</span>
+      </a>
+      <!-- GitHub -->
+      <a 
+        class="contact-icon"
+        href="https://github.com/Person0z" 
+        target="_blank" 
+        rel="noopener"
+      >
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+      <!-- Email -->
+      <a 
+        class="contact-icon"
+        href="mailto:root@person0z.me"
+      >
+        <i class="fas fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Person0z. All rights reserved.</p>
+    <p>
+      Built with an appreciation for Google’s Material You. Made with love by Person0z!
+    </p>
+    
+    <!-- Icon Links (Font Awesome) -->
+    <div class="footer-social-links">
+      <a href="https://youtube.com/@person0z" target="_blank" rel="noopener">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+      <a href="https://x.com/Person0z" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+      <a href="https://github.com/Person0z" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
